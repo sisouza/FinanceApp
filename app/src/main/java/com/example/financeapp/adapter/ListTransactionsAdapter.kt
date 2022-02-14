@@ -14,12 +14,12 @@ class ListTransactionsAdapter(transactions: List<String>, context: Context) : Ba
         return transactions.size
     }
 
-    override fun getItem(p0: Int): Long {
-        return 0
+    override fun getItem(p0: Int): Any {
+        TODO("Not yet implemented")
     }
 
     override fun getItemId(p0: Int): Long {
-        TODO("Not yet implemented")
+        return 0
     }
 
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {

@@ -1,12 +1,17 @@
 package com.example.financeapp.adapter
 
+import android.content.Context
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 
-class ListTransactionsAdapter : BaseAdapter() {
+class ListTransactionsAdapter(transactions: List<String>, context: Context) : BaseAdapter() {
+
+    private val transactions = transactions
+    private val context = context
+
     override fun getCount(): Int {
-        TODO("Not yet implemented")
+        return transactions.size
     }
 
     override fun getItem(p0: Int): Any {

@@ -14,8 +14,8 @@ class ListTransactionsAdapter(transactions: List<String>, context: Context) : Ba
         return transactions.size
     }
 
-    override fun getItem(p0: Int): Any {
-        TODO("Not yet implemented")
+    override fun getItem(position: Int): Any {
+        return transactions[position]
     }
 
     override fun getItemId(p0: Int): Long {

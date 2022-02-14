@@ -1,9 +1,12 @@
 package com.example.financeapp.adapter
 
 import android.content.Context
+import android.view.LayoutInflater
+import android.view.LayoutInflater.*
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import com.example.financeapp.R
 
 class ListTransactionsAdapter(transactions: List<String>, context: Context) : BaseAdapter() {
 
@@ -22,7 +25,7 @@ class ListTransactionsAdapter(transactions: List<String>, context: Context) : Ba
         return 0
     }
 
-    override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
-        TODO("Not yet implemented")
+    override fun getView(positon: Int, view: View?, parent: ViewGroup?): View {
+        return from(context).inflate(R.layout.transaction_item, parent, false)
     }
 }
